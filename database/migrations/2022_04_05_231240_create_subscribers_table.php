@@ -15,7 +15,7 @@ class CreateSubscribersTable extends Migration
     {
         Schema::create('subscribers', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('website_id')->unique()->constrained()->onUpdate('CASCADE')->onDelete('CASCADE');
+            $table->foreignId('website_id')->constrained()->onUpdate('CASCADE')->onDelete('CASCADE');
             $table->string('name')->nullable();
             $table->string('email')->unique();
             $table->timestamps();
