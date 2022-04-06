@@ -9,3 +9,9 @@
 
 # Documentation
 https://documenter.getpostman.com/view/20378214/UVyuTFwq
+
+# Email Subscribers Artisan Command
+This is a command to send "post-created" emails to subscribers => `php artisan email:subscribers`
+
+## Queue
+Post notification to subscribers are queued, Run `php artisan queue:listen` to see queued events live
